@@ -26,6 +26,13 @@ class Graph extends Component<IProps, {}> {
       stock: 'string',
       top_ask_price: 'float',
       top_bid_price: 'float',
+      price_abc: 'float',
+      price_def: 'float',
+      ratio: 'float',
+      timestamp: 'date',
+      upper_bound: 'float',
+      lower_bound: 'float',
+      trigger_alert: 'float'
       timestamp: 'date',
     };
 
@@ -43,7 +50,14 @@ class Graph extends Component<IProps, {}> {
         stock: 'distinctcount',
         top_ask_price: 'avg',
         top_bid_price: 'avg',
+        price_abc: 'avg',
+        price_def: 'avg',
+        ratio:'avg',
         timestamp: 'distinct count',
+        upper_bound: 'avg',
+        lower_bound: 'avg',
+        trigger_alert: 'avg',
+        
       }));
     }
   }
